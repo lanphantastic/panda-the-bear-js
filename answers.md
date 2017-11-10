@@ -76,3 +76,9 @@ Change the placeholder attribute of the message field to "state your business".
 var messageField = document.querySelector('textarea#message');
 messageField.placeholder = 'State your business';
 ```
+
+## Q11
+Give the name field a "value" attribute of "your nemesis".
+```
+nameField.value = 'Your Nemesis';
+```

@@ -82,3 +82,18 @@ Give the name field a "value" attribute of "your nemesis".
 ```
 nameField.value = 'Your Nemesis';
 ```
+
+## Q12
+Change the value attribute of the email field to "koalathebear@gmail.com".
+```
+var emailField = document.querySelector('input#email.contact-info');
+emailField.value = 'koalathebear@gmail.com';
+"koalathebear@gmail.com"
+```
+
+## Q13
+Change the value of the submit button on the contact form to "En garde!".
+```
+var submitButton = document.querySelector('input#submit');
+submitButton.value = 'En garde'
+```

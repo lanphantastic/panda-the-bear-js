@@ -53,3 +53,13 @@ Change the font family of the h1 to 'monospace'.
 var fontForH1 = document.querySelector('h1');
 fontForH1.style.fontFamily = 'monospace';
 ```
+
+## Q8
+Find a way to select the round icons in the sidebar and then change their colour.
+```
+var icons = document.querySelectorAll('.action-icon-bg');
+icons.forEach(function(icon){
+  icon.style.background = 'blue';
+  }
+);
+```

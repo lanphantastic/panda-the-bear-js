@@ -103,3 +103,10 @@ We should stop Koala from sending an email to Panda that they might regret! Find
 ```
 submitButton.disabled = true;
 ```
+
+## Q15
+We should help Panda protect their privacy by erasing their personal details from the sidebar.
+```
+var personalInfo = document.querySelector('.bio-info');
+personalInfo.innerText = " ";
+```

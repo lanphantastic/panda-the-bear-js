@@ -47,3 +47,9 @@ highlight.forEach(function(element) {
     element.style.color = 'blue';
 });
 ```
+## Q7
+Change the font family of the h1 to 'monospace'.
+```
+var fontForH1 = document.querySelector('h1');
+fontForH1.style.fontFamily = 'monospace';
+```

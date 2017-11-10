@@ -63,3 +63,9 @@ icons.forEach(function(icon){
   }
 );
 ```
+## Q9
+Scroll down to the contact form. Change the placeholder attribute of the name field to "identify yourself".
+```
+var nameField = document.querySelector('input#name.contact-info');
+nameField.placeholder = 'Identify yourself';
+```

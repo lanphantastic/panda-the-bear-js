@@ -4,6 +4,7 @@
 
 ```
 var profile_image = document.querySelector('.profile-image');
+profile_image.src = 'http://www.clipartmasters.com/clip-arts/1569/winnie-the-pooh-and-friends-clip-art-1569995.png';
 ```
 
 PROTIP: use the inspector to learn the dimensions of the current profile image and use a placeholder image service such as Place Bear to get an image of the same size.

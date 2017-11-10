@@ -97,3 +97,9 @@ Change the value of the submit button on the contact form to "En garde!".
 var submitButton = document.querySelector('input#submit');
 submitButton.value = 'En garde'
 ```
+
+## Q14
+We should stop Koala from sending an email to Panda that they might regret! Find a way to disable the submit button (hint: familiarize yourself with the disabled attribute).
+```
+submitButton.disabled = true;
+```

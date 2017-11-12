@@ -37,9 +37,10 @@ for(var i = 0; i < 10; i++){
 }
 ```
 
-##Q3
+## Q3
 Let’s add a message about when the page was last updated. We'll do this by appending a new ```<li>``` element to the ```<ul>``` in the sidebar (you might need to refresh the page to bring back the list items that we emptied out earlier).
 
+### Q3 - Part 1 - Creating the 'Page last updated on'
 First we need to construct a new ```<li>``` tag.
 ```
 var listItem = document.createElement('li');
@@ -64,6 +65,8 @@ listItem.appendChild(leftSpan);
 ```
 At this point our new elements are attached to each other but are still floating in the void separate from our webpage's DOM.
 
+
+### Q3 - Part 2 - Creating and Appending the Date
 First, let's find and select the parent and append the list to it.
 ```
 var bioInfoList = document.querySelector('.bio-info');

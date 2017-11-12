@@ -54,11 +54,11 @@ Next we need to make a "text node" in order to put text inside our new span. A t
 ```
 var lastUpdated = document.createTextNode('Page last updated on');
 ```
-We're ready to put that new text node inside our new <span> using appendChild.
+We're ready to put that new text node inside our new ```<span>``` using appendChild.
 ```
 leftSpan.appendChild(lastUpdated);
 ```
-And we'll put the <span> inside the <li>, again using appendChild.
+And we'll put the ```<span>``` inside the ```<li>```, again using appendChild.
 ```
 listItem.appendChild(leftSpan);
 ```

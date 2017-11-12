@@ -63,14 +63,18 @@ And we'll put the ```<span>``` inside the ```<li>```, again using appendChild.
 listItem.appendChild(leftSpan);
 ```
 At this point our new elements are attached to each other but are still floating in the void separate from our webpage's DOM.
+
+First, let's find and select the parent and append the list to it.
 ```
 var bioInfoList = document.querySelector('.bio-info');
 bioInfoList.appendChild(listItem);
 ```
+Create another span for the right side and a text (this time, it will be a date) to be added below.
 ```
 var rightSpan = document.createElement('span');
 var updateText = document.createTextNode(Date());
 ```
+Append the date to the right span and append the entire span date to the list.
 ```
 rightSpan.appendChild(updateText);
 listItem.appendChild(rightSpan);

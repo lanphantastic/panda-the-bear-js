@@ -24,3 +24,11 @@ Then we find where we want to place the copied pikachu and append it to that con
 var portfolioContainer = document.querySelector('.portfolio-container');
 copyPikachuOver = portfolioContainer.appendChild(pikachuCopy);
 ```
+
+2. Wow, that was so satisfying I think we should do it 10 more times. Use a for loop to help you do this.
+
+Using the previous code, we can add the loop afterward like this below.
+
+```
+for(var i = 0; i < 10; i++){ portfolioContainer.appendChild(pikachuCopy.cloneNode(true)); }
+```

@@ -11,7 +11,8 @@ timeTravel.remove();
 
 ## Adding Elements to the DOM
 
-1. That drawing of Pikachu is really cute. Let’s duplicate it using [cloneNode()](https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode) and insert it at the bottom of the ```.portfolio-container``` using insertAdjacentHTML() or [appendChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild).
+## Q1
+That drawing of Pikachu is really cute. Let’s duplicate it using [cloneNode()](https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode) and insert it at the bottom of the ```.portfolio-container``` using insertAdjacentHTML() or [appendChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild).
 
 First, we find the image of pikachu and make a clone.
 ```
@@ -25,10 +26,44 @@ var portfolioContainer = document.querySelector('.portfolio-container');
 copyPikachuOver = portfolioContainer.appendChild(pikachuCopy);
 ```
 
-2. Wow, that was so satisfying I think we should do it 10 more times. Use a for loop to help you do this.
+## Q2
+Wow, that was so satisfying I think we should do it 10 more times. Use a for loop to help you do this.
 
 Using the previous code, we can add the loop afterward like this below.
 
 ```
-for(var i = 0; i < 10; i++){ portfolioContainer.appendChild(pikachuCopy.cloneNode(true)); }
+for(var i = 0; i < 10; i++){
+  portfolioContainer.appendChild(pikachuCopy.cloneNode(true));
+}
+```
+
+##Q3
+Let’s add a message about when the page was last updated. We'll do this by appending a new ```<li>``` element to the ```<ul>``` in the sidebar (you might need to refresh the page to bring back the list items that we emptied out earlier).
+
+First we need to construct a new ```<li>``` tag.
+```
+var listItem = document.createElement('li');
+```
+Attach it to the ```<ul>``` in the sidebar, below Panda's name, location, and phone number.
+```
+var leftSpan = document.createElement('span');
+```
+
+```
+var lastUpdated = document.createTextNode('Page last updated on');
+leftSpan.appendChild(lastUpdated);
+listItem.appendChild(leftSpan);
+```
+
+```
+var bioInfoList = document.querySelector('.bio-info');
+bioInfoList.appendChild(listItem);
+```
+```
+var rightSpan = document.createElement('span');
+var updateText = document.createTextNode(Date());
+```
+```
+rightSpan.appendChild(updateText);
+listItem.appendChild(rightSpan);
 ```
